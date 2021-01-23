@@ -9,14 +9,14 @@ import com.example.firstapp.R
 import com.example.firstapp.listeners.ParticipanteListener
 import com.example.firstapp.models.Participante
 
-class ParticipanteViewHolder(val itemView: View) : RecyclerView.ViewHolder(itemView) {
+class ParticipanteViewHolder(val miView: View) : RecyclerView.ViewHolder(miView) {
 
     private var participanteListener:ParticipanteListener? = null
     private var participante:Participante? = null
 
-    private var nameTextView: TextView = itemView.findViewById(R.id.participanteNombre)
-    private var apTextView: TextView = itemView.findViewById(R.id.participanteApellido)
-    private var edadTextView: TextView = itemView.findViewById(R.id.participanteEdad)
+    private var nameTextView: TextView = miView.findViewById(R.id.participanteNombre)
+    private var apTextView: TextView = miView.findViewById(R.id.participanteApellido)
+    private var edadTextView: TextView = miView.findViewById(R.id.participanteEdad)
 
     fun bindBook(participante: Participante) {
         this.participante=participante
